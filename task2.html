@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Survey Form</title>
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form>
+
+        <!-- Text input field -->
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Textarea for longer response -->
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Multiple-choice (Radio buttons) -->
+        <label>How did you hear about us?</label><br>
+        <input type="radio" id="social" name="source" value="social media">
+        <label for="social">Social Media</label><br>
+        <input type="radio" id="friend" name="source" value="friend">
+        <label for="friend">Friend</label><br>
+        <input type="radio" id="ads" name="source" value="ads">
+        <label for="ads">Advertisements</label><br><br>
+
+        <!-- Checkboxes for multiple options -->
+        <label>What services are you interested in?</label><br>
+        <input type="checkbox" id="web" name="service" value="Web Development">
+        <label for="web">Web Development</label><br>
+        <input type="checkbox" id="app" name="service" value="App Development">
+        <label for="app">App Development</label><br>
+        <input type="checkbox" id="design" name="service" value="Design">
+        <label for="design">Design</label><br><br>
+
+        <!-- Rating scale -->
+        <label>Rate our website (1-5):</label><br>
+        <select name="rating" id="rating">
+            <option value="1">1 - Poor</option>
+            <option value="2">2</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4</option>
+            <option value="5">5 - Excellent</option>
+        </select><br><br>
+
+        <!-- Dropdown menu -->
+        <label for="country">Select your country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+</body>
+</html>
