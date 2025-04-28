@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML5 Structure</title>
+    <meta charset="UTF-8">
+    <title>Simple Survey Form</title>
 </head>
 <body>
-    <header>
-    <h1>Welcome to My HTML5 Page</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>This section gives an introduction about the website and what it offers.</p>
-    </section>
-    <section id="services">
-      <h2>Our Services</h2>
-        <h3>Web Development</h3>
-        <p>We provide modern and responsive web development solutions.</p>
-        <h3>Problem solution</h3>
-        <p>We help to find solutions for problem statements.</p>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>You can reach us via email at contact@abcdef.com or call us at 1234567890.</p>
-    </section>
-    <h2> Available Coures</h2>
-    <ol>
-        <li> AIML </li>
-        <li> FULL STACK </li>
-        <li> DATA SCIENCE </li>
-        <li> DATA ANALYST </li>
-        <li> BUSINESS INTELLIGENCE </li>
-    </ol>
-    <footer>
-    <p>2025 My Website.</p>
-  </footer>
+    <h1>Survey Form</h1>
+    <form>
+
+        <!-- Text input field -->
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Textarea for longer response -->
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Multiple-choice (Radio buttons) -->
+        <label>How did you hear about us?</label><br>
+        <input type="radio" id="social" name="source" value="social media">
+        <label for="social">Social Media</label><br>
+        <input type="radio" id="friend" name="source" value="friend">
+        <label for="friend">Friend</label><br>
+        <input type="radio" id="ads" name="source" value="ads">
+        <label for="ads">Advertisements</label><br><br>
+
+        <!-- Checkboxes for multiple options -->
+        <label>What services are you interested in?</label><br>
+        <input type="checkbox" id="web" name="service" value="Web Development">
+        <label for="web">Web Development</label><br>
+        <input type="checkbox" id="app" name="service" value="App Development">
+        <label for="app">App Development</label><br>
+        <input type="checkbox" id="design" name="service" value="Design">
+        <label for="design">Design</label><br><br>
+
+        <!-- Rating scale -->
+        <label>Rate our website (1-5):</label><br>
+        <select name="rating" id="rating">
+            <option value="1">1 - Poor</option>
+            <option value="2">2</option>
+            <option value="3">3 - Average</option>
+            <option value="4">4</option>
+            <option value="5">5 - Excellent</option>
+        </select><br><br>
+
+        <!-- Dropdown menu -->
+        <label for="country">Select your country:</label><br>
+        <select id="country" name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
 </body>
 </html>
